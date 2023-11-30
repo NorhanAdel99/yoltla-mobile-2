@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @font-face {
+            font-family: "project-font";
+            src: url("../fonts/URWGeometricArabic-Medium.ttf");
+
+        }
+
+        body {
+            direction: rtl;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            font-family: "project-font";
+            font-size: 13px;
+        }
+
+        :root {
+            --main: #91379e;
+            --main-2: #dcdada;
+            --main-3: #ececec;
+            --green-color: #95c11f;
+            --wh: #fff;
+            --b: #000;
+            --soft-gary: #fcfaff;
+            --space-gray: #a2a2a2;
+        }
+
+        .main-color {
+            color: var(--main) !important;
+        }
+
+        .main-color-2 {
+            color: var(--main-2) !important;
+        }
+
+        .box .underline:not(:last-child) {
+            border-bottom: 1px solid #d9d9d9 !important;
+            margin-bottom: 10px;
+        }
+
+        .contain-date {
+            padding: 10px 4px;
+            border-radius: 5px;
+            border: 1px solid var(--main-3);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+
+        .userImg {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+
+        .destinguished-box {
+            background-color: #f5ecf6;
+            padding: 9px 12px;
+            border-radius: 5px;
+            color: #91379e;
+
+        }
+
+        .showTime {
+            color: gray;
+            display: inline-block;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+        }
+
+        .s-space {
+            margin: 30px;
+        }
+
+        .center {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .underline {
+            padding: 5px 10px;
+        }
+
+        .underline::after,
+        .clear::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .p-10 {
+            padding: 10px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px;
+        }
+
+        .text-muted {
+            color: gray;
+        }
+
+        .box {
+            border: 1px solid #d9d9d9;
+            border-radius: 10px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-danger {
+            color: rgb(135, 4, 4);
+        }
+    </style>
+</head>
+
+<div class="s-space">
+    <div>
+        <img src="img/person.png" alt="" class="userImg rounded-circle  mb-10">
+        <h4 class="mb-10 text-center"> عاصم عبدالله احمد محمد </h4>
+    </div>
+    <div class="box p-10" id="target">
+        <h4 class="text-danger mb-10"> طلبات الغياب </h4>
+        <div class="center">
+            <div class="contain-date">
+                <span class="destinguished-box  wh-color" for="inputText2">من</span>
+                <span class="showTime" placeholder="">
+                    2023-02-02
+                </span>
+            </div>
+            <div class="contain-date">
+                <span class="destinguished-box  wh-color" for="inputText2">الي</span>
+                <span class="showTime" placeholder="">
+                    2023-04-02
+                </span>
+            </div>
+        </div>
+        <div class="box p-10 mb-10">
+            <h4 class="main-color underline">14/11/2023</h4>
+            <h4 class=" mb-5"> سبب الغياب </h4>
+            <p class="text-muted">
+
+                هذا النص هو مثال لنص ممكن ان يستبدل هذا النص هو مثال لنص ممكن ان يستبدل هذا النص هو مثال لنص ممكن ان
+                يستبدل هذا النص هو مثال لنص ممكن ان يستبدل
+            </p>
+        </div>
+        <div class="box p-10">
+            <h4 class="main-color underline">14/11/2023</h4>
+            <h4 class=" mb-5"> سبب الغياب </h4>
+            <p class="text-muted">
+                هذا النص هو مثال لنص ممكن ان يستبدل هذا النص هو مثال لنص ممكن ان يستبدل هذا النص هو مثال لنص ممكن ان
+                يستبدل هذا النص هو مثال لنص ممكن ان يستبدل
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
